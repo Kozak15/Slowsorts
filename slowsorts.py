@@ -1,11 +1,12 @@
 import random
+#O(n**2) time
 def slowsort(lst):
     for i in range(len(lst)):
         for j in range(len(lst)):
             if lst[i] < lst[j]:
                 lst[i],lst[j] = lst[j],lst[i]
     return lst
-
+#O(n**2) time
 def recur_sort(lst):
     if len(lst) <= 1:
         return lst
@@ -19,9 +20,10 @@ def issorted(lst):
         if lst[i] > lst[i+1]:
             return False
     return True
-
-def bogo_sort(lst):
+#O(n*n!) time
+def bogosort(lst):
     while not issorted(lst):
         random.shuffle(lst)
     return lst
 l = [ random.randint(0,100) for _ in range(10) ]
+
