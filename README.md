@@ -1,3 +1,2 @@
 # Slowsorts
-A collection of inefficient sorting algorithms I made, just for fun :)
-While these algorithms will eventually sort your data, bear in mind it's extremely slow
+A collection of inefficient sorting algorithms, I don't know why I made them
